@@ -1,5 +1,4 @@
 import XCTest
-@testable import FLiveSDK_iOS
 
 final class FLiveSDK_iOSTests: XCTestCase {
     func testExample() throws {
