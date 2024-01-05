@@ -24,12 +24,12 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "FLiveSDK-iOS",
-            dependencies: [ "FLiveSDK",
-                            .product(name: "CocoaAsyncSocket", package: "CocoaAsyncSocket"),
+            dependencies: [
+                .product(name: "CocoaAsyncSocket", package: "CocoaAsyncSocket"),
             ]),
         .testTarget(
             name: "FLiveSDK-iOSTests",
             dependencies: ["FLiveSDK-iOS"]),
-        .binaryTarget(name: "FLiveSDK", path: "Sources/FLiveSDK.xcframework"),
+        .binaryTarget(name: "FLiveSDK", path: "./Sources/FLiveSDK.xcframework"),
     ]
 )
