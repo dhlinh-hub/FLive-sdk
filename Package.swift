@@ -22,13 +22,12 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
+        .binaryTarget(name: "FLiveSDK", path: "Sources/FLiveSDK.xcframework"),
         .target(
             name: "FLiveSDK-iOS",
-            dependencies: [
-                .target(name: "FLiveSDK"),
+            dependencies: [ "FLiveSDK",
                 .product(name: "CocoaAsyncSocket", package: "CocoaAsyncSocket"),
             ]),
-        .binaryTarget(name: "FLiveSDK", path: "Sources/FLiveSDK.xcframework"),
         .testTarget(
             name: "FLiveSDK-iOSTests",
             dependencies: ["FLiveSDK-iOS"]),
