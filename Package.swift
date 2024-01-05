@@ -30,6 +30,6 @@ let package = Package(
         .testTarget(
             name: "FLiveSDK-iOSTests",
             dependencies: ["FLiveSDK-iOS"]),
-        .binaryTarget(name: "FLiveSDK", path: "Sources/FLiveSDK.xcframework"),
+        .binaryTarget(name: "FLiveSDK", path: "Sources/FLiveSDK-iOS/FLiveSDK.xcframework"),
     ]
 )
