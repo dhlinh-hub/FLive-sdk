@@ -4,12 +4,12 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
 import AVFoundation
-import CocoaAsyncSocket
 import Combine
 import CoreGraphics
 import CoreImage
 import CoreVideo
 @_exported import FLiveSDK
+import FLiveUDPSocket
 import Foundation
 import Swift
 import UIKit

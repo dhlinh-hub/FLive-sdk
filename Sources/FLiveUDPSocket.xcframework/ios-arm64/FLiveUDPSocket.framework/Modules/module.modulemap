@@ -1,0 +1,6 @@
+framework module FLiveUDPSocket {
+  umbrella header "FLiveUDPSocket.h"
+
+  export *
+  module * { export * }
+}

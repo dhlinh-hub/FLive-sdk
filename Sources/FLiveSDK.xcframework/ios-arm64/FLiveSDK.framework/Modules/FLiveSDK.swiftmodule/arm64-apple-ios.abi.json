@@ -1102,8 +1102,8 @@
       },
       {
         "kind": "Import",
-        "name": "CocoaAsyncSocket",
-        "printedName": "CocoaAsyncSocket",
+        "name": "FLiveUDPSocket",
+        "printedName": "FLiveUDPSocket",
         "declKind": "Import",
         "moduleName": "FLiveSDK"
       },
@@ -1133,6 +1133,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "FLiveUDPSocket",
+        "printedName": "FLiveUDPSocket",
+        "declKind": "Import",
+        "moduleName": "FLiveSDK"
       },
       {
         "kind": "TypeDecl",
@@ -3772,14 +3779,14 @@
     {
       "filePath": "\/Users\/ishipo\/Desktop\/SDK\/FLiveSDK\/FLiveSDK\/Private\/Socket\/SocketProvider.swift",
       "kind": "StringLiteral",
-      "offset": 497,
+      "offset": 495,
       "length": 14,
       "value": "\"FLiveSDK.SocketProvider\""
     },
     {
       "filePath": "\/Users\/ishipo\/Desktop\/SDK\/FLiveSDK\/FLiveSDK\/Private\/Socket\/SocketProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2463,
+      "offset": 2461,
       "length": 17,
       "value": "\"FLiveSDK.SocketUDPProvider\""
     },

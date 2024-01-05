@@ -13,6 +13,6 @@ FOUNDATION_EXPORT double FLiveSDKVersionNumber;
 //! Project version string for FLiveSDK.
 FOUNDATION_EXPORT const unsigned char FLiveSDKVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <FLiveSDK/PublicHeader.h>
 
+// In this header, you should import all the public headers of your framework using statements like #import <FLiveSDK/PublicHeader.h>
 
