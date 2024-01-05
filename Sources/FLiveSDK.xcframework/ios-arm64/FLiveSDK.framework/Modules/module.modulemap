@@ -1,0 +1,11 @@
+framework module FLiveSDK {
+  umbrella header "FLiveSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module FLiveSDK.Swift {
+  header "FLiveSDK-Swift.h"
+  requires objc
+}
