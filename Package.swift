@@ -11,11 +11,11 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "FLiveSDK",
-            targets: ["FLiveSDK"]),
+            name: "FLiveSDK-iOS",
+            targets: ["FLiveSDK-iOS"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/robbiehanson/CocoaAsyncSocket", branch: "master")
+        .package(url: "https://github.com/robbiehanson/CocoaAsyncSocket", branch: "master"),
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
@@ -25,9 +25,10 @@ let package = Package(
         .target(
             name: "FLiveSDK-iOS",
             dependencies: [
+                .target(name: "FLiveSDK"),
                 .product(name: "CocoaAsyncSocket", package: "CocoaAsyncSocket"),
             ]),
-        .binaryTarget(name: "FLiveSDK", path: "./Sources/FLiveSDK.xcframework"),
+        .binaryTarget(name: "FLiveSDK", path: "Sources/FLiveSDK.xcframework"),
         .testTarget(
             name: "FLiveSDK-iOSTests",
             dependencies: ["FLiveSDK-iOS"]),
